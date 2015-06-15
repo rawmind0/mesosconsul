@@ -60,8 +60,8 @@ func CheckArgs () mesosconsul.Config {
 
   flag.BoolVar(&c.Agent, "a", false, "Agent execution")
   flag.StringVar(&c.Server, "s", "", "Server")
-  flag.StringVar(&c.Environ, "e", "gbx0", "environment")
-  flag.StringVar(&c.Domain, "d", "innotechapp.com", "domain name")
+  flag.StringVar(&c.Environ, "e", "env1", "environment")
+  flag.StringVar(&c.Domain, "d", "domain1", "domain name")
   flag.StringVar(&c.ConsulPort, "consul-port", "8500", "Consul port")
   flag.StringVar(&c.DockerPort, "docker-port", "2375", "Docker port")
   flag.BoolVar(&c.List, "l", false, "List services")
