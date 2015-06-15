@@ -6,7 +6,7 @@ import (
     "os"
     "bytes"
     "flag"
-    "mesosConsul"
+    "github.com/rawmind0/mesosConsul"
 )
 
 func CheckArgs () mesosconsul.Config {
