@@ -30,17 +30,17 @@ In examples folder, you can see main.go, an example to use the package.
 
 The command has two modes of operation: 
 - Agent mode (-a): To run in each mesos-slave. The command connects to the local consul agent and to the docker socket.
-- Remote server mode (-s <server>): To run from remote node. The command connects to the <server> consul and docker agent.
+- Remote server mode (-s server): To run from remote node. The command connects to the server consul and docker agent.
 
 The command implements two actions:
 - List (-l): List registered, running and not running services.
 - Sync (-sync): Deregister in consul, not running services.
 
-<environmet>, <domain>, <consulPort> and "<dockerPort>" are used to form docker and consul urls as:
-- dockerUrl tcp://<server>.<environmet>.<domain>:<dockerPort>
-- consulUrl http://<server>.<environmet>.<domain>:<consulPort>
+environmet, domain, consulPort and dockerPort are used to form docker and consul urls as:
+- dockerUrl tcp://server.environmet.domain:dockerPort
+- consulUrl http://server.environmet.domain:consulPort
 
-"Usage: ./main -a | -s=<server> [-e=<environment>] [-d=<domain>] [-consulPort=<port>] [-dockerPort=<port>]) [-l] [-sync]"
+Usage: ./main -a | -s=server [-e=environment] [-d=domain] [-consulPort=port] [-dockerPort=port]) [-l] [-sync]"
 
 ```go
 package main
