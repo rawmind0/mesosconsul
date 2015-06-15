@@ -36,11 +36,11 @@ The command implements two actions:
 - List (-l): List registered, running and not running services.
 - Sync (-sync): Deregister in consul, not running services.
 
-<environmet>, <domain>, <consulPort> and <dockerPort> are used to form docker and consul urls as:
+<environmet>, <domain>, <consulPort> and "<dockerPort>" are used to form docker and consul urls as:
 - dockerUrl tcp://<server>.<environmet>.<domain>:<dockerPort>
 - consulUrl http://<server>.<environmet>.<domain>:<consulPort>
 
-Usage: ./main -a | -s=<server> [-e=<environment>] [-d=<domain>] [-consulPort=<port>] [-dockerPort=<port>]) [-l] [-sync]
+"Usage: ./main -a | -s=<server> [-e=<environment>] [-d=<domain>] [-consulPort=<port>] [-dockerPort=<port>]) [-l] [-sync]"
 
 ```go
 package main
